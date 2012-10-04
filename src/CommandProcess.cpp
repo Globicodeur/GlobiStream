@@ -2,8 +2,15 @@
 
 void CommandProcess::init()
 {
+    #if defined(Q_OS_WIN)
     // Starting MS-DOS
     start(WINDOWS_CMD_PROCESS);
+    #endif
+
+    #if defined(Q_OS_UNIX)
+    start(UNIX_CMD_PROCESS);
+    #endif
+
     waitForStarted();
 }
 

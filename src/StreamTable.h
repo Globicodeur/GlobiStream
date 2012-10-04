@@ -1,7 +1,7 @@
 #ifndef STREAMTABLE_H
 #define STREAMTABLE_H
 
-#include <QtableWidget>
+#include <QTableWidget>
 #include <QHeaderView>
 #include <QLabel>
 #include <QDesktopServices>

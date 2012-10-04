@@ -56,6 +56,9 @@ static const QString CHANGE_DIRECTORY_COMMAND("cd \"%1\"\n");
 static const QString EXIT_COMMAND("exit\n");
 static const int EXIT_TIMEOUT(200);
 
+/* Unix */
+static const QString UNIX_CMD_PROCESS("/bin/sh");
+
 /* GUI */
 static const QString APPLICATION_ICON(":/GlobiStreams/Icon");
 static const QColor ONLINE_COLOR("lime");

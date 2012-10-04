@@ -2,8 +2,16 @@
 #define COMMANDPROCESS_H
 
 #include <QProcess>
-#include <Windows.h>
 #include <QApplication>
+
+#if defined(Q_OS_WIN)
+#include <Windows.h>
+#endif
+
+#if defined(Q_OS_UNIX)
+#include <unistd.h>
+#define Sleep sleep
+#endif
 
 #include "Global.h"
 
